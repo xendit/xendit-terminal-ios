@@ -12,7 +12,7 @@ let package = Package(
         .library(
             name: "TerminalC2C",
             targets: ["TerminalC2CWrapper"]
-        )
+        ),
         .library(
             name: "TerminalH2H",
             targets: ["TerminalH2HWrapper"]
