@@ -23,7 +23,7 @@ let package = Package(
         // namespace collisions with the wrapper target or the product name.
         .binaryTarget(
             name: "TerminalC2CBinary",
-            url: "https://github.com/xendit/xendit-terminal-ios/releases/download/1.0.1-dev.3/TerminalC2C.xcframework.zip",
+            url: "https://github.com/xendit/xendit-terminal-ios/releases/download/v1.0.1-dev.3/TerminalC2C.xcframework.zip",
             checksum: "7c2299f48e0bd10f2fc172071378387417ddb05c5f22f2219f7ef6c91a29acf9"
         ),
 
