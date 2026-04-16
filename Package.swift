@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "Terminal SDK",
+    name: "TerminalSDK",
     platforms: [
         .iOS("15.0")
     ],
