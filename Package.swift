@@ -45,7 +45,7 @@ let package = Package(
                 .product(name: "Sentry", package: "sentry-cocoa")
             ],
             path: "Sources/TerminalWrapper"
-        )
+        ),
         .target(
             name: "TerminalH2HWrapper",
             dependencies: [
