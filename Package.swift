@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "TerminalC2C",
+    name: "Terminal SDK",
     platforms: [
         .iOS("15.0")
     ],
@@ -12,6 +12,10 @@ let package = Package(
         .library(
             name: "TerminalC2C",
             targets: ["TerminalC2CWrapper"]
+        )
+        .library(
+            name: "TerminalH2H",
+            targets: ["TerminalH2HWrapper"]
         )
     ],
     dependencies: [
@@ -23,8 +27,13 @@ let package = Package(
         // namespace collisions with the wrapper target or the product name.
         .binaryTarget(
             name: "TerminalC2CBinary",
-            url: "https://github.com/xendit/xendit-terminal-ios/releases/download/v1.0.1-dev.3/TerminalC2C.xcframework.zip",
-            checksum: "7c2299f48e0bd10f2fc172071378387417ddb05c5f22f2219f7ef6c91a29acf9"
+            url: "https://github.com/xendit/xendit-terminal-ios/releases/download/1.0.0/TerminalC2C.xcframework.zip",
+            checksum: "a7836930dce347e1641c4daadbcf927d00919b3e219f695b0fcba7fe72120b98"
+        ),
+        .binaryTarget(
+            name: "TerminalH2HBinary",
+            url: "https://github.com/xendit/xendit-terminal-ios/releases/download/1.0.0/TerminalH2H.xcframework.zip",
+            checksum: "f6f90bee90db6ad1b0c691027e9211a568de71ac0f39b22ab8ba63b324136dfc"
         ),
 
         // 2. The wrapper target.
@@ -33,6 +42,14 @@ let package = Package(
             name: "TerminalC2CWrapper",
             dependencies: [
                 .target(name: "TerminalC2CBinary"),
+                .product(name: "Sentry", package: "sentry-cocoa")
+            ],
+            path: "Sources/TerminalWrapper"
+        )
+        .target(
+            name: "TerminalH2HWrapper",
+            dependencies: [
+                .target(name: "TerminalH2HBinary"),
                 .product(name: "Sentry", package: "sentry-cocoa")
             ],
             path: "Sources/TerminalWrapper"
