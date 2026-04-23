@@ -26,13 +26,13 @@ let package = Package(
         // We give them unique names to avoid namespace collisions with the wrapper targets.
         .binaryTarget(
             name: "TerminalC2CBinary",
-            url: "https://github.com/shiburagi/cocoapod-test-2/releases/download/1.0.0/TerminalC2C.xcframework.zip",
-            checksum: "a7836930dce347e1641c4daadbcf927d00919b3e219f695b0fcba7fe72120b98"
+            url: "https://github.com/shiburagi/cocoapod-test-2/releases/download/1.1.0/TerminalC2C.xcframework.zip",
+            checksum: "28d55e737f0b5b7c86e330efb99305b4b3886814839b0d17c88bcb5551b7f9e0"
         ),
         .binaryTarget(
             name: "TerminalH2HBinary",
-            url: "https://github.com/shiburagi/cocoapod-test-2/releases/download/1.0.0/TerminalH2H.xcframework.zip",
-            checksum: "f6f90bee90db6ad1b0c691027e9211a568de71ac0f39b22ab8ba63b324136dfc"
+            url: "https://github.com/shiburagi/cocoapod-test-2/releases/download/1.1.0/TerminalH2H.xcframework.zip",
+            checksum: "13091daebad6701dee6d4384d08b69c91b172dc5e2fcc9d5cc636754cb9da018"
         ),
 
         // 2. The wrapper targets.
