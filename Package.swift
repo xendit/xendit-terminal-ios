@@ -26,13 +26,13 @@ let package = Package(
         // We give them unique names to avoid namespace collisions with the wrapper targets.
         .binaryTarget(
             name: "TerminalC2CBinary",
-            url: "https://github.com/xendit/xendit-terminal-ios/releases/download/1.1.1/TerminalC2C.xcframework.zip",
-            checksum: "529aa507655aded40e68a13b0105c02291421fbff1568fdea8b4bc8bfe2a254b"
+            url: "https://github.com/xendit/xendit-terminal-ios/releases/download/1.1.2/TerminalC2C.xcframework.zip",
+            checksum: "ee593f98d44e0de449f2850f647a737798d36f7b8871a804ae03c82177a89c41"
         ),
         .binaryTarget(
             name: "TerminalH2HBinary",
-            url: "https://github.com/xendit/xendit-terminal-ios/releases/download/1.1.1/TerminalH2H.xcframework.zip",
-            checksum: "9a13d06ea6e933877f2fcabb399ba568663e8e8d2703bd665c14119273c2a07a"
+            url: "https://github.com/xendit/xendit-terminal-ios/releases/download/1.1.2/TerminalH2H.xcframework.zip",
+            checksum: "23d6492f994ae9bd5afd786238cafed89121d3151058da571fd9ba5277ed6fe2"
         ),
 
         // 2. The wrapper targets.
